@@ -1,0 +1,9 @@
+INTEGRAR SOBRE MDK OFICIAL Forge 26.3-66.1.0.
+Mod ID: atlasluminanexus
+Mod Name: Atlas Lumina Nexus
+Version: 0.1.0-alpha
+Package: com.radig.atlasluminanexus
+Clase: com.radig.atlasluminanexus.forge.AtlasForge
+Copiar common-src/com/radig/... a src/main/java/com/radig/...
+EDITAR TOML DE METADATOS del MDK oficial: establecer modId="atlasluminanexus" y displayName="Atlas Lumina Nexus"; conservar la estructura/formato requerido por la plantilla 66.1.0.
+Eliminar fuentes de ejemplo del MDK. NO SOBREESCRIBIR la configuración Gradle oficial.

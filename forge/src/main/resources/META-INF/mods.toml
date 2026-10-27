@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[66,)"
+license="All Rights Reserved"
+clientSideOnly=true
+
+[[mods]]
+modId="atlasluminanexus"
+version="0.1.0-alpha"
+displayName="Atlas Lumina Nexus"
+logoFile="atlasluminanexus.png"
+authors="Radig"
+description='''Explore • Discover • Connect. Maps, waypoints and magical travel.'''
+displayTest="IGNORE_ALL_VERSION"
+
+[[dependencies.atlasluminanexus]]
+modId="forge"
+mandatory=true
+versionRange="[66,)"
+ordering="NONE"
+side="CLIENT"
+
+[[dependencies.atlasluminanexus]]
+modId="minecraft"
+mandatory=true
+versionRange="[26.3,26.4)"
+ordering="NONE"
+side="CLIENT"

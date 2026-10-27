@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "atlasluminanexus",
+  "version": "${version}",
+  "name": "Atlas Lumina Nexus",
+  "description": "Explore • Discover • Connect | Maps, waypoints and magical travel.",
+  "authors": [
+    "Radig"
+  ],
+  "license": "All Rights Reserved",
+  "icon": "assets/atlasluminanexus/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "com.radig.atlasluminanexus.AtlasLuminaNexus"
+    ],
+    "client": [
+      "com.radig.atlasluminanexus.client.AtlasLuminaNexusClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.20.1",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
