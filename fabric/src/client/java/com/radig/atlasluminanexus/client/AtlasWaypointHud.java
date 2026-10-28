@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-/** HUD de waypoints anclados a posiciones XYZ, proyectados con la camara real 26.3. */
+/** HUD de waypoints anclados a posiciones XYZ, proyectados con la camara real 26.2. */
 public final class AtlasWaypointHud {
     private AtlasWaypointHud() {}
     private record Target(Waypoint waypoint,double distance) {}

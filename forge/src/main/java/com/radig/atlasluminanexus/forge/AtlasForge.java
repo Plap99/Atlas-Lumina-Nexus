@@ -12,6 +12,6 @@ public final class AtlasForge {
         RegisterKeyMappingsEvent.BUS.addListener(AtlasForgeClient::registerKeys);
         TickEvent.ClientTickEvent.Post.BUS.addListener(AtlasForgeClient::afterTick);
         AddGuiOverlayLayersEvent.BUS.addListener(AtlasForgeClient::registerHud);
-        System.out.println("[ALN] Atlas Lumina Nexus | Forge 26.3 initialized");
+        System.out.println("[ALN] Atlas Lumina Nexus | Forge 26.2 initialized");
     }
 }

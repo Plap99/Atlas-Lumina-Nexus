@@ -1,11 +1,11 @@
 modLoader="javafml"
-loaderVersion="[66,)"
+loaderVersion="[65,)"
 license="All Rights Reserved"
 clientSideOnly=true
 
 [[mods]]
 modId="atlasluminanexus"
-version="0.1.0-alpha"
+version="1.0.0"
 displayName="Atlas Lumina Nexus"
 logoFile="atlasluminanexus.png"
 authors="Radig"
@@ -15,13 +15,13 @@ displayTest="IGNORE_ALL_VERSION"
 [[dependencies.atlasluminanexus]]
 modId="forge"
 mandatory=true
-versionRange="[66,)"
+versionRange="[65.1.5,66)"
 ordering="NONE"
 side="CLIENT"
 
 [[dependencies.atlasluminanexus]]
 modId="minecraft"
 mandatory=true
-versionRange="[26.3,26.4)"
+versionRange="[26.2,26.3)"
 ordering="NONE"
 side="CLIENT"

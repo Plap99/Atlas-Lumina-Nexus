@@ -10,6 +10,7 @@ plugins {
 }
 
 version = '1.0.0'
+base { archivesName = 'atlasluminanexus-Forge-26.2' }
 group = 'com.radig.atlasluminanexus'
 
 // Mojang ships Java 25 to end users in 26.1+, so your mod should target Java 25.
@@ -51,7 +52,7 @@ repositories {
 }
 
 dependencies {
-    implementation minecraft.dependency('net.minecraftforge:forge:26.3-66.1.0')
+    implementation minecraft.dependency('net.minecraftforge:forge:26.2-65.1.5')
     annotationProcessor 'net.minecraftforge:eventbus-validator:7.0.6'
 }
 

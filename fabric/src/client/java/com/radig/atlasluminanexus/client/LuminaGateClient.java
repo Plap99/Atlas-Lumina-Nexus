@@ -371,7 +371,7 @@ public final class LuminaGateClient {
         return Math.abs(value - Math.rint(value)) < 0.00001 ? value + 0.5 : value;
     }
 
-    /** Reconoce los ResourceKey serializados usados por el sistema de waypoints de 26.3. */
+    /** Reconoce los ResourceKey serializados usados por el sistema de waypoints de 26.2. */
     private static String dimensionId(String value) {
         if (value == null) return null;
         Matcher m = DIMENSION.matcher(value.toLowerCase(Locale.ROOT));

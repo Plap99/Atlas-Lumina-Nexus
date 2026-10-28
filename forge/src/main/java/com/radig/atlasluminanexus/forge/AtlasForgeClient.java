@@ -19,13 +19,13 @@ public final class AtlasForgeClient {
     private static final KeyMapping.Category CATEGORY = KeyMapping.Category.register(
             Identifier.fromNamespaceAndPath("atlasluminanexus", "controls"));
     private static final KeyMapping OPEN = new KeyMapping("key.atlasluminanexus.waypoint_list",
-            InputConstants.Type.KEYBOARD, InputConstants.KEY_U, CATEGORY);
+            InputConstants.Type.KEYSYM, InputConstants.KEY_U, CATEGORY);
     private static final KeyMapping RESCUE = new KeyMapping("key.atlasluminanexus.emergency_rescue_ctrl_r",
-            InputConstants.Type.KEYBOARD, InputConstants.KEY_R, CATEGORY);
+            InputConstants.Type.KEYSYM, InputConstants.KEY_R, CATEGORY);
     private static final KeyMapping SAVE = new KeyMapping("key.atlasluminanexus.save_new_waypoint",
-            InputConstants.Type.KEYBOARD, InputConstants.KEY_N, CATEGORY);
+            InputConstants.Type.KEYSYM, InputConstants.KEY_N, CATEGORY);
     private static final KeyMapping WORLD_MAP = new KeyMapping("key.atlasluminanexus.world_map",
-            InputConstants.Type.KEYBOARD, InputConstants.KEY_M, CATEGORY);
+            InputConstants.Type.KEYSYM, InputConstants.KEY_M, CATEGORY);
     private AtlasForgeClient() {}
     public static void registerHud(AddGuiOverlayLayersEvent event) {
         event.getLayeredDraw().add(
@@ -38,7 +38,7 @@ public final class AtlasForgeClient {
         event.register(WORLD_MAP);
         event.register(RESCUE);
         event.register(SAVE);
-        // Bus de mensajes de sistema (Forge 66.1.0, EventBus 7).
+        // Bus de mensajes de sistema (Forge 65.1.5, EventBus 7).
         SystemMessageReceivedEvent.BUS.addListener(AtlasForgeClient::filterSystemMessage);
     }
     public static boolean filterSystemMessage(SystemMessageReceivedEvent event) {

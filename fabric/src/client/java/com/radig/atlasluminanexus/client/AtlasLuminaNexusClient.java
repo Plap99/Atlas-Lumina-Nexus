@@ -18,20 +18,20 @@ public final class AtlasLuminaNexusClient implements ClientModInitializer {
         KeyMapping.Category category = KeyMapping.Category.register(
                 Identifier.fromNamespaceAndPath("atlasluminanexus", "controls"));
         KeyMapping openAtlas = KeyMappingHelper.registerKeyMapping(new KeyMapping(
-                "key.atlasluminanexus.waypoint_list", InputConstants.Type.KEYBOARD,
+                "key.atlasluminanexus.waypoint_list", InputConstants.Type.KEYSYM,
                 InputConstants.KEY_U, category));
         // Ctrl + R: rescate deliberado; respeta los permisos vanilla.
         KeyMapping emergency = KeyMappingHelper.registerKeyMapping(new KeyMapping(
-                "key.atlasluminanexus.emergency_rescue_ctrl_r", InputConstants.Type.KEYBOARD,
+                "key.atlasluminanexus.emergency_rescue_ctrl_r", InputConstants.Type.KEYSYM,
                 InputConstants.KEY_R, category));
         HudElementRegistry.attachElementAfter(VanillaHudElements.CHAT,
                 Identifier.fromNamespaceAndPath("atlasluminanexus", "waypoint_markers"),
                 (graphics, deltaTracker) -> AtlasWaypointHud.draw(graphics));
         KeyMapping quickWaypoint = KeyMappingHelper.registerKeyMapping(new KeyMapping(
-                "key.atlasluminanexus.save_new_waypoint", InputConstants.Type.KEYBOARD,
+                "key.atlasluminanexus.save_new_waypoint", InputConstants.Type.KEYSYM,
                 InputConstants.KEY_N, category));
         KeyMapping openMap = KeyMappingHelper.registerKeyMapping(new KeyMapping(
-                "key.atlasluminanexus.world_map", InputConstants.Type.KEYBOARD,
+                "key.atlasluminanexus.world_map", InputConstants.Type.KEYSYM,
                 InputConstants.KEY_M, category));
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             AtlasWaypointClient.sync(client);

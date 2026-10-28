@@ -21,7 +21,7 @@ import java.util.UUID;
 /**
  * Atlas Lumina Nexus - editor en dos columnas con selectores modales.
  * Las ventanas se dibujan SOBRE el editor: los campos no pierden lo escrito.
- * Usado en Fabric y Forge (Minecraft 26.3).
+ * Usado en Fabric y Forge (Minecraft 26.2).
  */
 public final class AtlasWaypointEditorScreen extends Screen {
     private static final int BG = 0xF50D1425;

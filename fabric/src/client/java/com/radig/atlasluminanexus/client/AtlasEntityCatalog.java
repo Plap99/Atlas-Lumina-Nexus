@@ -11,7 +11,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.HashSet;
 
-/** Especies vanilla Minecraft 26.3 identificadas por ID de registro, no por nombre visible. */
+/** Especies vanilla Minecraft 26.2 identificadas por ID de registro, no por nombre visible. */
 public final class AtlasEntityCatalog {
     public record Entry(String key,String label) {}
     private AtlasEntityCatalog() {}
